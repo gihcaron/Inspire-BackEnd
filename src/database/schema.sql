@@ -16,7 +16,7 @@ CREATE TABLE frases (
     id SERIAL PRIMARY KEY,
     frase TEXT NOT NULL,
     titulo VARCHAR(150),
-    autor_frase VARCHAR(100) NOT NULL,
+    autor_frase VARCHAR(100),
     categoria VARCHAR(20) CHECK (categoria IN (
     'Musicas',
     'Filmes',
